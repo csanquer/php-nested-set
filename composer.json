@@ -1,0 +1,34 @@
+{
+    "name": "csanquer/php-nested-set",
+    "description": "PHP PDO and Doctrine DBAL nested set",
+    "keywords": ["pdo", "nested", "set", "dbal", "doctrine", "tree", "database"],
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Charles Sanquer",
+            "email": "charles.sanquer@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-PDO": "*",
+        "doctrine/dbal": "2.5.*@dev"
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.2",
+        "phpunit/dbunit": "~1.3"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": { 
+            "CSanquer\\NestedSet\\": "src/",
+            "CSanquer\\NestedSet\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}
